@@ -43,3 +43,10 @@ This variable defines a map of objects where each object represents a Lambda fun
 
 ## Usage
 To use these variables, reference them in your Terraform configurations where needed. Ensure that the paths and names are correctly set according to your local environment and AWS setup.
+
+main.tf
+```
+module "lambda-and-api" {
+  source = "./api-gateway-with-lambda-stack"
+}
+```
